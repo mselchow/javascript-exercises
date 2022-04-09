@@ -30,7 +30,17 @@ const power = function (a, b) {
   return total;
 };
 
-const factorial = function () {};
+const factorial = function (num) {
+  if (num == 0) {
+    return 1;
+  } else {
+    let sum = 1;
+    for (let i = 1; i <= num; i++) {
+      sum *= i;
+    }
+    return sum;
+  }
+};
 
 // Do not edit below this line
 module.exports = {
