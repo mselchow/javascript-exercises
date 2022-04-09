@@ -14,9 +14,21 @@ const sum = function (nums) {
   }
 };
 
-const multiply = function () {};
+const multiply = function (nums) {
+  if (nums.length > 0) {
+    return nums.reduce((prev, current) => prev * current);
+  } else {
+    return 0;
+  }
+};
 
-const power = function () {};
+const power = function (a, b) {
+  let total = a;
+  for (let i = 1; i < b; i++) {
+    total *= a;
+  }
+  return total;
+};
 
 const factorial = function () {};
 
